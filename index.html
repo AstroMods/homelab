@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#070b12"
+    >
+
+    <meta
+        name="description"
+        content="Vantix Home Lab — Private infrastructure, experimentation, and technology."
+    >
+
+    <title>Vantix Home Lab</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+    <div
+        class="background-grid"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="background-glow"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    VX
+                </div>
+
+                <div class="brand-info">
+
+                    <h1>
+                        Vantix Home Lab
+                    </h1>
+
+                    <p>
+                        Private Infrastructure
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="system-status"
+                id="systemStatus"
+            >
+
+                <span
+                    class="status-indicator"
+                    id="statusIndicator"
+                ></span>
+
+                <span id="statusText">
+                    Operational
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         MAIN
+    ================================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-label">
+                    HOME LAB / INFRASTRUCTURE
+                </div>
+
+                <h2>
+                    Built to
+                    <span>experiment.</span>
+                </h2>
+
+                <p>
+                    A private environment for infrastructure,
+                    virtualization, networking, development,
+                    automation, and learning.
+                </p>
+
+
+                <div class="hero-info">
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Environment
+                        </span>
+
+                        <strong>
+                            Private
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Status
+                        </span>
+
+                        <strong class="green">
+                            Online
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Local Time
+                        </span>
+
+                        <strong id="localTime">
+                            --:--:--
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFRASTRUCTURE -->
+
+        <section class="infrastructure">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            INFRASTRUCTURE
+                        </span>
+
+                        <h3>
+                            Lab Systems
+                        </h3>
+
+                    </div>
+
+                    <span class="system-count">
+                        06 SYSTEMS
+                    </span>
+
+                </div>
+
+
+                <div class="system-grid">
+
+
+                    <!-- COMPUTE -->
+
+                    <article
+                        class="system-card"
+                        data-system="Compute"
+                    >
+
+                        <div class="card-header">
+
+                            <div class="card-icon">
+                                CPU
+                            </div>
+
+                            <span class="card-status">
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Compute
+                        </h4>
+
+                        <p>
+                            Dedicated resources for workloads,
+                            virtual machines, and experiments.
+                        </p>
+
+                        <div class="card-footer">
+
+                            <span>
+                                System
+                            </span>
+
+                            <span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VIRTUALIZATION -->
+
+                    <article
+                        class="system-card"
+                        data-system="Virtualization"
+                    >
+
+                        <div class="card-header">
+
+                            <div class="card-icon">
+                                VM
+                            </div>
+
+                            <span class="card-status">
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Virtualization
+                        </h4>
+
+                        <p>
+                            Isolated environments for testing
+                            systems and services.
+                        </p>
+
+                        <div class="card-footer">
+
+                            <span>
+                                System
+                            </span>
+
+                            <span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- NETWORK -->
+
+                    <article
+                        class="system-card"
+                        data-system="Networking"
+                    >
+
+                        <div class="card-header">
+
+                            <div class="card-icon">
+                                NET
+                            </div>
+
+                            <span class="card-status">
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Networking
+                        </h4>
+
+                        <p>
+                            Private networks designed for
+                            experimentation and learning.
+                        </p>
+
+                        <div class="card-footer">
+
+                            <span>
+                                System
+                            </span>
+
+                            <span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DEVELOPMENT -->
+
+                    <article
+                        class="system-card"
+                        data-system="Development"
+                    >
+
+                        <div class="card-header">
+
+                            <div class="card-icon">
+                                DEV
+                            </div>
+
+                            <span class="card-status">
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Development
+                        </h4>
+
+                        <p>
+                            A playground for applications,
+                            automation, and new ideas.
+                        </p>
+
+                        <div class="card-footer">
+
+                            <span>
+                                System
+                            </span>
+
+                            <span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- STORAGE -->
+
+                    <article
+                        class="system-card"
+                        data-system="Storage"
+                    >
+
+                        <div class="card-header">
+
+                            <div class="card-icon">
+                                NAS
+                            </div>
+
+                            <span class="card-status">
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Storage
+                        </h4>
+
+                        <p>
+                            Centralized storage for projects,
+                            backups, and lab data.
+                        </p>
+
+                        <div class="card-footer">
+
+                            <span>
+                                System
+                            </span>
+
+                            <span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MONITORING -->
+
+                    <article
+                        class="system-card"
+                        data-system="Monitoring"
+                    >
+
+                        <div class="card-header">
+
+                            <div class="card-icon">
+                                MON
+                            </div>
+
+                            <span class="card-status">
+                                ONLINE
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Monitoring
+                        </h4>
+
+                        <p>
+                            Visibility into systems, services,
+                            and infrastructure health.
+                        </p>
+
+                        <div class="card-footer">
+
+                            <span>
+                                System
+                            </span>
+
+                            <span>
+                                Ready
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATUS -->
+
+        <section class="status-section">
+
+            <div class="container status-grid">
+
+                <div class="status-panel">
+
+                    <span class="section-label">
+                        LAB UPTIME
+                    </span>
+
+                    <strong id="uptime">
+                        00:00:00
+                    </strong>
+
+                    <p>
+                        Current session uptime
+                    </p>
+
+                </div>
+
+
+                <div class="status-panel">
+
+                    <span class="section-label">
+                        SYSTEMS
+                    </span>
+
+                    <strong>
+                        <span id="onlineCount">
+                            6
+                        </span>
+                        / 6
+                    </strong>
+
+                    <p>
+                        Infrastructure operational
+                    </p>
+
+                </div>
+
+
+                <div class="status-panel">
+
+                    <span class="section-label">
+                        MODE
+                    </span>
+
+                    <strong>
+                        Experimental
+                    </strong>
+
+                    <p>
+                        Build. Test. Learn.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <span>
+                © 2026 Vantix Home Lab
+            </span>
+
+            <span id="footerTime">
+                --:--:--
+            </span>
+
+            <span>
+                PRIVATE • SELF-HOSTED
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
